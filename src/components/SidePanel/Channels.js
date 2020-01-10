@@ -22,7 +22,7 @@ class Channels extends Component {
   }
 
   componentWillUnmount() {
-    removeListeners();
+    this.removeListeners();
   }
 
   addListeners = () => {
