@@ -33,7 +33,7 @@ export class DirectMessages extends Component {
     });
 
     this.state.connectedRef.on('value', snap => {
-      if (snap.value === true ) {
+      if (snap.val() === true ) {
         const ref = this.state.presenceRef.child(currentUserUid);
         ref.set(true);
         ref.onDisconnect().remove(err => {
