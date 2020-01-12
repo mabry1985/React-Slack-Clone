@@ -20,7 +20,7 @@ class Messages extends React.Component {
 
   componentDidMount() {
     const { channel, user } = this.state;
-
+   
     if(channel && user) {
       this.addListeners(channel.id);
     }
@@ -32,6 +32,7 @@ class Messages extends React.Component {
 
   addMessageListener = channelId => {
     let loadedMessages = [];
+    console.log(channelId)
     this.state.messagesRef
       .child(channelId)
       .on('child_added', snap => { 
