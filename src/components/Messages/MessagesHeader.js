@@ -12,6 +12,7 @@ class MessagesHeader extends Component {
       handleStar,
       isChannelStarred
      } = this.props
+
     return (
       <Segment clearing>
         <Header fluid="true" as="h2" floated="left" style={{ marginBottom: 0 }}>
