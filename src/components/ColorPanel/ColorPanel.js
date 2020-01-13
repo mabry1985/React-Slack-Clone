@@ -76,7 +76,7 @@ class ColorPanel extends React.Component {
   
   render(){
     const { modal, primary, secondary, userColors } = this.state
-    console.log(userColors)
+
     return(
       <Sidebar
         as={Menu}
