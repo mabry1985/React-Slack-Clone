@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
-import registerServiceWorker from './registerServiceWorker';
 import firebase from './firebase';
 import rootReducer from './reducers/index';
 import Spinner from './Spinner';
@@ -59,4 +58,3 @@ ReactDOM.render(
     </Router>
   </Provider>
 , document.getElementById('root'));
-registerServiceWorker();
